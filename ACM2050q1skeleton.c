@@ -4,6 +4,7 @@
  * I.E. "Hello World!" Hello and World! are the two words. & the output should be World! Hello
  * Note, the program should preserve the same amount of white space
  * I.E. "h   i" is different from "h i"
+ * Fill in the reverseWords function
  */
 
 #include <stdio.h>
@@ -29,7 +30,7 @@ void printList( ListT *head );
 char *removeNewline(char *s);
 
 // Function you'll fill out.
-char *reverse_words(char *s);
+char *reverseWords(char *s);
 
 int main ( void ){
 
@@ -42,10 +43,10 @@ int main ( void ){
 
   printf("\nReverse the following string:\n%s\n", myString);
 
-  myString = reverse_words(myString);
+  myString = reverseWords(myString);
 
 
-  printf("The string with the words reversed is:\n%s\n");
+  printf("The string with the words reversed is:\n%s\n", myString);
 
   free(myString);
 
@@ -176,8 +177,7 @@ void printList( ListT *head ){
 }
 
 
-char *removeNewline(char *s)
-{
+char *removeNewline(char *s) {
   int len = strlen(s);
 
   if (len > 0 && s[len-1] == '\n')  // if there's a newline
@@ -186,3 +186,7 @@ char *removeNewline(char *s)
   return s;
 }
 
+// Fill in this function
+char *reverseWords(char *s) {
+
+}
